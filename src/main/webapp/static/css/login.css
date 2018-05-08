@@ -1,0 +1,42 @@
+button{
+    outline: none;
+}
+.mid{
+    background: url("../image/log_bg1.jpg")no-repeat;
+    background-size: cover;
+}
+.signup{
+    position: absolute;
+    top:150px;
+    left:500px;
+    width:32%;
+    height:250px;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: black;
+    opacity: 1;
+
+
+}
+.input_board{
+    width:70%;
+    height: 50px;
+    margin-left: 15%;
+    margin-top: 25px;
+    border: 1px white solid;
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    font-family:  FangSong;
+    font-weight: 300;
+    font-size: 20px;
+    outline: none;
+}
+canvas:hover {
+    cursor: hand;
+}
+.loadingtext{
+    position: absolute;
+    top:0px;
+    left: 36%;
+}

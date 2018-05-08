@@ -1,0 +1,33 @@
+.mid{
+    background: url("../image/md_bg6.jpg") no-repeat ;
+    background-size: cover;
+}
+#button1{
+    background-color:white;
+    color: rgb(0, 160, 233);
+}
+.caption{
+    width: 50%;
+    height:40px;
+    top:105px;
+    position: absolute;
+    margin-left:200px;
+
+}
+.button_3{
+    font:15px  Microsoft YaHei white;
+    font-style: normal;
+    color:rgb(0, 160, 233);
+    background-color: transparent;
+    width: 130px;
+    height:50px;
+    border:1px solid rgb(0, 160, 233) ;
+    border-radius: 10px;
+    margin-left:50px;
+}
+.button_3:hover{
+    cursor: hand;
+}
+button{
+    outline: none;
+}

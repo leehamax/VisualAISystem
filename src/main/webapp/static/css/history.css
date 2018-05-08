@@ -1,0 +1,53 @@
+.mid{
+    background: url("../image/his_bg.jpg") no-repeat ;
+    background-size: cover;
+}
+button{
+    outline: none;
+}
+#button3{
+    background-color:white;
+    color: rgb(0, 160, 233);
+}
+.signup{
+    position: absolute;
+    top:50px;
+    left:400px;
+    width:57%;
+    height:450px;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: black;
+    opacity: 1;
+    overflow: hidden;
+
+}
+.canvas{
+    position: absolute;
+    top:300px;
+    left: 3%;
+    width:300px;
+    height:200px;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: black;
+    opacity: 1;
+    overflow: hidden;
+}
+#snap{
+    font:20px  Microsoft YaHei white;
+    font-style: normal;
+    color: white;
+    background:transparent;
+    position: absolute;
+    bottom: 90px;
+    right: 1%;
+    width: 100px;
+    height:40px;
+    border: 1px white solid;
+    border-radius: 5px;
+    font-weight: 100;
+    margin-top:500px;
+    margin-left: 75%;
+    outline:none;
+}

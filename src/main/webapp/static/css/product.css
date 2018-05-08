@@ -1,0 +1,88 @@
+.mid{
+    background: url("../image/product_bg.jpg") no-repeat ;
+    background-size: cover;
+}
+button{
+
+    outline:none;
+
+}
+#button2{
+    background-color:white;
+    color: rgb(0, 160, 233);
+}
+.captionflash{
+    width: 40%;
+    height:100px;
+    top:0px;
+    position: absolute;
+    margin-left:0px;
+    background:transparent;
+
+}
+.board{
+    width: 25%;
+    height:400px;
+    top:150px;
+    position: absolute;
+    margin-left:137px;
+    background:transparent;
+
+}
+.right{
+    width: 47%;
+    height:400px;
+    top:147px;
+    position: absolute;
+    margin-left:770px;
+    background:transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    border:1px solid rgb(255, 255, 255) ;
+    border-radius: 20px;
+    opacity: 0.7;
+}
+.video_upload{
+    width: 90%;
+    height:400px;
+    top:150px;
+    margin-left:5%;
+    background:transparent;
+
+
+}
+.upload_table{
+    width: 90%;
+    height:400px;
+    top:150px;
+    margin-left:5%;
+    background:black;
+    opacity: 0.8;
+    border:1px solid rgb(255, 255, 255) ;
+    border-radius: 20px;
+
+}
+p{
+    color: white;
+    font-family:  FangSong;
+    font-weight: 300;
+    font-size: 20px;
+}
+input{
+    width:50%;
+    height: 50px;
+    margin-left: 15%;
+    margin-top: 25px;
+    border: 1px white solid;
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    font-family:  FangSong;
+    font-weight: 300;
+    font-size: 20px;
+    outline: none;
+}
+#p1{
+    font-weight: 200;
+    font-size: 15px;
+}

@@ -1,0 +1,78 @@
+.mid{
+    background: url("../image/info_bg.jpg") no-repeat ;
+    background-size: cover;
+}
+button{
+    outline: none;
+}
+#button4{
+    background-color:white;
+    color: rgb(0, 160, 233);
+}
+.info{
+
+    border-radius: 20px;
+    border: 1px solid white;
+    color: black;
+    opacity: 1;
+    position: absolute;
+    top:27px;
+    left:450px;
+    width:40%;
+    height:550px;
+}
+label{
+    color: white;
+    font-family:  FangSong;
+    font-weight: 300;
+    font-size: 20px;
+}
+.photo-mask{
+    border-radius:50%;
+    background:#000;
+    opacity:.6;
+    font-size:13px;
+    position:absolute;
+    top:0;cursor:pointer;
+    left:0;
+    width:100%;
+    height:100%;
+    color:#fff;
+    display:none;
+
+}
+.img-upload{
+    width:100%;
+    height:100%;
+    opacity:0;
+    position:absolute;
+    top:0;
+    left:0;
+    cursor:pointer
+}
+.txt{
+    width:50%;
+    height: 50px;
+    margin-left: 20%;
+    margin-top: 25px;
+    border: 1px white solid;
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    font-family:  FangSong;
+    font-weight: 300;
+    font-size: 20px;
+    outline: none;
+}
+.user-item{
+
+
+}
+label{
+    position: absolute;
+    margin-top: 33px;
+    margin-left:5%;
+    border: 1px white solid;
+    background: transparent;
+    border-radius: 10px;
+}

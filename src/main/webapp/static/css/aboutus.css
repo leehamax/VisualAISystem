@@ -1,0 +1,23 @@
+.mid{
+    background: url("../image/info_bg.jpg") no-repeat ;
+    background-size: cover;
+}
+.signup{
+    position: absolute;
+    top:20px;
+    left:130px;
+    width:87%;
+    height:550px;
+    border-radius: 20px;
+    color: black;
+    opacity: 1;
+    overflow: hidden;
+
+}
+.video{
+    border: 1px solid white;
+    overflow: hidden;
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dddemo:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="dddemo-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="dddemo:war exploded" />
+    </root>
+  </artifact>
+</component>

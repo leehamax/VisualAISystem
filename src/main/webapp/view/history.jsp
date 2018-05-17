@@ -25,47 +25,9 @@
     <link href="../static/css/history.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="../static/js/resAndErr.js"></script>
     <script type="text/javascript" src="../static/js/move.js"></script>
-    <script type="text/javascript">
-        window.addEventListener("DOMContentLoaded", function() {
-            // Grab elements, create settings, etc.
-            var canvas = document.getElementById("canvas"),
-                context = canvas.getContext("2d"),
-                video = document.getElementById("video"),
-                videoObj = { "video": true },
-                errBack = function(error) {
-                    console.log("Video capture error: ", error.code);
-                };
-
-            // Put video listeners into place
-            if(navigator.getUserMedia) { // Standard
-                //alert("支持navigator.getUserMedia");
-                navigator.getUserMedia(videoObj, function(stream) {
-                    video.src = stream;
-                    video.play();
-                }, errBack);
-            } else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
-                //alert("支持navigator.webkitGetUserMedia");
-                navigator.webkitGetUserMedia(videoObj, function(stream){
-                    video.src = window.webkitURL.createObjectURL(stream);
-                    video.play();
-                }, errBack);
-            }
-            else if(navigator.mozGetUserMedia) { // Firefox-prefixed
-                //alert("支持navigator.mozGetUserMedia");
-                navigator.mozGetUserMedia(videoObj, function(stream){
-                    video.src = window.URL.createObjectURL(stream);
-                    video.play();
-                }, errBack);
-            }
-            // 触发拍照动作
-            document.getElementById("snap").addEventListener("click", function() {
-                context.drawImage(video, 0, 0, 300,200);
-            });
-
-        }, false);
-    </script>
+    <script type="text/javascript" src="../static/js/history.js"></script>
 </head>
-<body>
+<body >
 <div id="main_top" class="top">
     <div id="main_top_title" class="title">
         <b><span style="color: rgb(255, 255, 255);"><span style="font-size: 38px;"><span style="color: rgb(0, 160, 233);">AR</span> Future</span></span></b>
@@ -92,7 +54,7 @@
         </table>
     </div>
 </div>
-<div id="main_mid" class="mid">
+<div id="his_main_mid" class="mid">
     <div id="main_mid_signup" class="signup">
         <video id="video" width="100%" height="100%" style="border: white 1px solid;border-radius: 20px;" autoplay></video>
     </div>

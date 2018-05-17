@@ -56,7 +56,7 @@
         </table>
     </div>
 </div>
-<div id="main_mid" class="mid">
+<div id="sign_main_mid" class="mid">
  <div id="main_mid_signup" class="signup">
     <h1  style="text-align: center;margin-top: 8px;font-style: italic ;color: rgb(255,255,255);">Join Us !</h1>
      <form id="sign_up_form" name="signup_form" class="form" action="/dddemo/userresgister/register" method="post" name="form1">

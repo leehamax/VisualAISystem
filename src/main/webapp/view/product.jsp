@@ -55,7 +55,7 @@
         </table>
     </div>
 </div>
-<div id="main_mid" class="mid">
+<div id="pro_main_mid" class="mid">
     <h1 class="loadingtext" style="position:absolute;top:0px;left:11%;">
         <span>U</span>
         <span>P</span>

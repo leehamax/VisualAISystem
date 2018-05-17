@@ -57,7 +57,7 @@
         </table>
     </div>
 </div>
-<div id="main_mid" class="mid">
+<div id="info_main_mid" class="mid">
     <div id="main_mid_info" class="info">
         <div class="user-item" style="margin-top:30px;position: relative;">
             <label>头像</label>

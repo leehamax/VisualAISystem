@@ -16,15 +16,16 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
     <!–[if lt IE 9]><script src=”http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js”></script><![endif]–>
     <link href="../static/css/mainframe.css" type="text/css" rel="stylesheet">
+    <link href="../static/css/textflash.css" type="text/css" rel="stylesheet">
     <link href="../static/css/fir.css" type="text/css" rel="stylesheet">
-   
     <script type="text/javascript" src="../static/js/fir.js"></script>
     <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../static/js/prevent.js"></script>
     <script type="text/javascript" src="../static/js/resAndErr.js"></script>
     <script type="text/javascript" src="../static/js/move.js"></script>
+
 </head>
-<body >
+<body onload="begin();hide();">
 
 
 <div id="main_top" class="top" >
@@ -68,6 +69,7 @@
         <button id="button8" class="button_3">了解更多</button>
     </div>
 </div>
+
     <div id="main_down" class="down" >
         <div id="inner_div" class="down_inner">
         <table id="down_table" class="down_table" cellspacing="50" style="margin: 0px;padding: 0px;" >

@@ -17,6 +17,7 @@ function begin() {
         var files = e.dataTransfer.files;
         document.getElementById("p1").innerHTML = "有效图片：" + files.length + " 张";
         document.getElementById("p2").innerHTML = "上传完毕！";
+        //预览第一张图片
         var file = files[0];
         var reader = new FileReader();
         reader.onload = function (e) {
@@ -26,21 +27,23 @@ function begin() {
         reader.readAsDataURL(file);
 
         var formData = new FormData();
-
-        //相当于 <input type=file name='myfile' />
-
-        formData.append("myfile", file);
+        for(var i=0; i< files.length; i++){
+            alert(files[i].name);
+            formData.append("fileArray",files[i]);   // 文件对象
+        }
 
         //使用ajax异步上传，暂时不考虑兼容性
 
         var xmlHttp = new XMLHttpRequest();
 
-        //必须使用post才能提交文件类型的数据，即大量的数据
 
-        xmlHttp.open();
 
-        //发送表单数据，然后服务端使用myfile这个名称接收即可
+        xmlHttp.open("post","/picture/analysis",true);
+        xmlHttp.setRequestHeader("X-Requested-With", "XMLHttpRequest");
 
         xmlHttp.send(formData);
+        xmlHttp.onload = function () {
+            alert("上传完成!");
+        };
     }
 }

@@ -60,7 +60,7 @@
     </div>
 
 </div>
-<div id="main_mid" class="mid">
+<div id="log_main_mid" class="mid">
     <h1 class="loadingtext">
         <span>L</span>
         <span>o</span>

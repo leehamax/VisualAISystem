@@ -1,7 +1,7 @@
 button{
     outline: none;
 }
-.mid{
+#sign_main_mid{
     background: url("../image/md_bg4.jpeg")no-repeat;
     background-size: cover;
 }

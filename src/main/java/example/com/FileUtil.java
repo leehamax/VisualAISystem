@@ -1,5 +1,7 @@
 package example.com;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import java.io.*;
 
 /**
@@ -32,8 +34,36 @@ public class FileUtil {
         return sb.toString();
     }
 
+    public static byte[] readFileByBytes(MultipartFile file1) throws IOException {
+            File file = (File) file1;
+            ByteArrayOutputStream bos = new ByteArrayOutputStream((int) file.length());
+            BufferedInputStream in = null;
+            try {
+                in = new BufferedInputStream(new FileInputStream(file));
+                short bufSize = 1024;
+                byte[] buffer = new byte[bufSize];
+                int len1;
+                while (-1 != (len1 = in.read(buffer, 0, bufSize))) {
+                    bos.write(buffer, 0, len1);
+                }
 
-    public static byte[] readFileByBytes(String filePath) throws IOException {
+                byte[] var7 = bos.toByteArray();
+                return var7;
+            } finally {
+                try {
+                    if (in != null) {
+                        in.close();
+                    }
+                } catch (IOException var14) {
+                    var14.printStackTrace();
+                }
+
+                bos.close();
+            }
+
+    }
+
+    /*public static byte[] readFileByBytes(String filePath) throws IOException {
         File file = new File(filePath);
         if (!file.exists()) {
             throw new FileNotFoundException(filePath);
@@ -64,5 +94,5 @@ public class FileUtil {
                 bos.close();
             }
         }
-    }
+    }*/
 }

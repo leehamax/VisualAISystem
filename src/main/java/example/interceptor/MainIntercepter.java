@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class MainIntercepter implements HandlerInterceptor{
     private static final Log logger = LogFactory.getLog(MainIntercepter.class);
 
-    private static final String[] IGNORE_URI={"/home/hi","/home/hello"};
+    private static final String[] IGNORE_URI={"/product/product1"};
 
     @Override
     public void afterCompletion(HttpServletRequest arg0,
@@ -32,22 +32,28 @@ public class MainIntercepter implements HandlerInterceptor{
         String servletPath=request.getServletPath();
         for(String s:IGNORE_URI){
             if(servletPath.contains(s)){
-                flag=true;
-                break;
-            }
-        }
-        if(!flag){
-            User user=(User)request.getSession().getAttribute("user");
-            if(user==null){
-                logger.info("MainInterceptor 拦截成功");
-                request.setAttribute("message","请先登陆");
-                request.getRequestDispatcher("login").forward(request,response);
+               //logger.info("进入这里了");
+                User user=(User)request.getSession().getAttribute("user");
+                if(user==null){
+                    logger.info("MainInterceptor 拦截成功");
+                    //request.setAttribute("message","请先登陆");
+                    //request.getRequestDispatcher("/userlogin/login").forward(request,response);
+                    response.sendRedirect(request.getContextPath()+"/home/hello");
+                    return false;
+                }
+                else {
+                    logger.info("MainInterceptor 拦截通行");
+                    flag=true;
+                }
+
             }
             else {
-                logger.info("MainInterceptor 拦截通行");
                 flag=true;
+
             }
         }
+
+
         return flag;
     }
 

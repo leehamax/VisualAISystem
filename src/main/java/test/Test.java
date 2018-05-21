@@ -96,7 +96,6 @@ public class Test {
     }
     public static void run(MultipartFile file)throws Exception{
         String otherHost = "https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic";
-
         byte[] imgData = FileUtil.readFileByBytes(file);
         String imgStr = Base64Util.encode(imgData);
         String params = URLEncoder.encode("image", "UTF-8") + "=" + URLEncoder.encode(imgStr, "UTF-8");
@@ -139,55 +138,55 @@ public class Test {
     }
 
 
-   /* public static void run(String filePath)throws Exception{
-       String otherHost = "https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic";
-       // 本地图片路径
-           byte[] imgData = FileUtil.readFileByBytes(filePath);
-           String imgStr = Base64Util.encode(imgData);
-           String params = URLEncoder.encode("image", "UTF-8") + "=" + URLEncoder.encode(imgStr, "UTF-8");
-           String accessToken = getAuth("85Z3L7aZClkAu2u2YsAYijV7", "ymGuOhQ287TZb0P8rZEvZQP8ktN50CLk");
-           //long startTime=System.currentTimeMillis();
-           String result = HttpUtil.post(otherHost, accessToken, params);
-           String temp=result.substring(result.indexOf("["),result.indexOf("]"));
-           //System.out.println(result);
-           System.out.println(temp);
-           StringTokenizer token=new StringTokenizer(temp,"\"}");
-           boolean a=false;
-           boolean b=false;
-           while(!(a==true&&b==true)&&token.hasMoreElements()){
-               String use=token.nextToken();
-               int t=use.lastIndexOf("注册号");
-               int t1=use.lastIndexOf("名称");
-               if(t>=0){
-                   use.substring(t);
-                   System.out.println(use);
-                   createExcel.add(use);
-                   a=true;
-               }
-               else if(t1>=0){
-                   use.substring(t1);
-                   System.out.println(use);
-                   createExcel.add(use);
-                   b=true;
-               }
-
-           }
-           if(a==false){
-               createExcel.add("注册号未识别");
-           }
-           if(b==false){
-            createExcel.add("企业名称未识别");
-        }
-           //long endTime=System.currentTimeMillis(); //获取结束时间
-           //System.out.println("程序运行时间： "+(endTime-startTime)+"ms");
-
-
-
-   }*/
+//   public static void run(String filePath)throws Exception{
+//       String otherHost = "https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic";
+//       // 本地图片路径
+//           byte[] imgData = FileUtil.readFileByBytes(filePath);
+//           String imgStr = Base64Util.encode(imgData);
+//           String params = URLEncoder.encode("image", "UTF-8") + "=" + URLEncoder.encode(imgStr, "UTF-8");
+//           String accessToken = getAuth("85Z3L7aZClkAu2u2YsAYijV7", "ymGuOhQ287TZb0P8rZEvZQP8ktN50CLk");
+//           //long startTime=System.currentTimeMillis();
+//           String result = HttpUtil.post(otherHost, accessToken, params);
+//           String temp=result.substring(result.indexOf("["),result.indexOf("]"));
+//           //System.out.println(result);
+//           System.out.println(temp);
+//           StringTokenizer token=new StringTokenizer(temp,"\"}");
+//           boolean a=false;
+//           boolean b=false;
+//           while(!(a==true&&b==true)&&token.hasMoreElements()){
+//               String use=token.nextToken();
+//               int t=use.lastIndexOf("注册号");
+//               int t1=use.lastIndexOf("名称");
+//               if(t>=0){
+//                   use.substring(t);
+//                   System.out.println(use);
+//                   createExcel.add(use);
+//                   a=true;
+//               }
+//               else if(t1>=0){
+//                   use.substring(t1);
+//                   System.out.println(use);
+//                   createExcel.add(use);
+//                   b=true;
+//               }
+//
+//           }
+//           if(a==false){
+//               createExcel.add("注册号未识别");
+//           }
+//           if(b==false){
+//            createExcel.add("企业名称未识别");
+//        }
+//           //long endTime=System.currentTimeMillis(); //获取结束时间
+//           //System.out.println("程序运行时间： "+(endTime-startTime)+"ms");
+//
+//
+//
+//   }
 
     public static void main(String[] args) {
         long startTime=System.currentTimeMillis();
-        for(int a=1;a<=50;a++){
+        for(int a=1;a<=10;a++){
             String aa="D:\\JAVA\\check\\"+a+".png";
             try {
                 //Test.run(aa);

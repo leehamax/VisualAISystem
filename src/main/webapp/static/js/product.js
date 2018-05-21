@@ -32,7 +32,7 @@ function begin() {
             formData.append("fileArray",files[i]);   // 文件对象
         }
 
-        使用ajax异步上传，暂时不考虑兼容性
+        //使用ajax异步上传，暂时不考虑兼容性
 
         var xmlHttp = new XMLHttpRequest();
 

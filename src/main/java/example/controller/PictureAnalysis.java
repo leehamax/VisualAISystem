@@ -26,7 +26,7 @@ import static test.Test.createExcel;
 public class PictureAnalysis {
     private static final Log logger = LogFactory.getLog(PictureAnalysis.class);
     @RequestMapping(value = "/analysis")
-    public void analysisPicture(@RequestParam(value = "fileArray") MultipartFile[] fileArray, HttpServletRequest request){
+    public void analysisPicture(@RequestParam(value = "fileArray") MultipartFile[] fileArray){
         for(int i=0;i<fileArray.length;i++){
             MultipartFile file = fileArray[i];
             try {

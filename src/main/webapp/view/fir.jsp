@@ -7,9 +7,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Cache-Control" content="no-transform" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="安全帽智能提取系统,一款基于人工智能和计算机视觉的识别工具
+    <meta name="description" content="工商图片智能提取系统,一款基于人工智能和计算机视觉的识别工具
 为您所处的环境进行实时监控及抓包提取"/>
-    <meta name="keyword" content="安全帽，智能提取，人工智能，计算机视觉，识别" />
+    <meta name="keyword" content="工商图片，智能提取，人工智能，计算机视觉，识别" />
     <meta name="format-detection" content="telephone=no,email=no,address=no" />
     <meta name="renderer" content="webkit" />
     <meta name=”viewport” content=”width=device-width, initial-scale=1″ />
@@ -76,12 +76,12 @@
             <tr>
                 <td>
                 <div id="main_down_aboutus" class="aboutus">
-                    <a href="/dddemo/down/videlist" onclick=""><img src="../static/image/44.png"></a>
+                    <a href="/down/videlist" onclick=""><img src="../static/image/44.png"></a>
                     <span style="color: rgb(255, 255, 255);font-size: 20px;font-weight: 100 ;margin-top: 10px;align-content: center;">&nbsp;历史记录</span>
                 </div></td>
                 <td>
                     <div id="main_down_info" class="aboutus">
-                        <a href="/dddemo/resanderr/res"><img src="../static/image/15.png"></a>
+                        <a href="/resanderr/res"><img src="../static/image/15.png"></a>
                         <span style="color: rgb(255, 255, 255);font-size: 20px;font-weight: 100 ;margin-top: 10px;align-content: center;">&nbsp;使用体验</span>
                     </div>
                 </td>
@@ -93,7 +93,7 @@
                 </td>
                 <td>
                     <div id="main_down_improve" class="aboutus">
-                        <a href="/dddemo/resanderr/err"><img src="../static/image/32.png"></a>
+                        <a href="/resanderr/err"><img src="../static/image/32.png"></a>
                         <span style="color: rgb(255, 255, 255);font-size: 20px;font-weight: 100 ;margin-top: 10px;align-content: center;">&nbsp;错误反馈</span>
                     </div>
                 </td>

@@ -1,7 +1,7 @@
-#info_main_mid{
-    background: url("../image/info_bg.jpg") no-repeat ;
-    background-size: cover;
-}
+.mid{
+     background: url("../image/info_bg.jpg") no-repeat ;
+     background-size: cover;
+ }
 button{
     outline: none;
 }

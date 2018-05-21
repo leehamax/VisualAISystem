@@ -93,12 +93,12 @@
             <tr>
                 <td>
                     <div id="main_down_aboutus" class="aboutus">
-                        <a href="/dddemo/down/videlist" onclick=""><img src="../static/image/44.png"></a>
+                        <a href="/down/videlist" onclick=""><img src="../static/image/44.png"></a>
                         <span style="color: rgb(255, 255, 255);font-size: 20px;font-weight: 100 ;margin-top: 10px;align-content: center;">&nbsp;历史记录</span>
                     </div></td>
                 <td>
                     <div id="main_down_info" class="aboutus">
-                        <a href="/dddemo/resanderr/res"><img src="../static/image/15.png"></a>
+                        <a href="/resanderr/res"><img src="../static/image/15.png"></a>
                         <span style="color: rgb(255, 255, 255);font-size: 20px;font-weight: 100 ;margin-top: 10px;align-content: center;">&nbsp;使用体验</span>
                     </div>
                 </td>
@@ -110,7 +110,7 @@
                 </td>
                 <td>
                     <div id="main_down_improve" class="aboutus">
-                        <a href="/dddemo/resanderr/err"><img src="../static/image/32.png"></a>
+                        <a href="/resanderr/err"><img src="../static/image/32.png"></a>
                         <span style="color: rgb(255, 255, 255);font-size: 20px;font-weight: 100 ;margin-top: 10px;align-content: center;">&nbsp;错误反馈</span>
                     </div>
                 </td>

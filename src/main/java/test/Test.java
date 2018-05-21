@@ -43,7 +43,7 @@ public class Test {
     private static WritableCellFormat diffFormat;
     public static WritableWorkbook createExcel(){
         try {
-            String fileNameAndPath = "result.xls";
+            String fileNameAndPath = "D:\\JAVA\\check\\result.xls";
 
             book = Workbook.createWorkbook(new File(fileNameAndPath));
 

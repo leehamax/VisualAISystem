@@ -1,31 +1,33 @@
 package example.interceptor;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import org.apache.commons.logging.*;
 import example.pojo.User;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 public class MainIntercepter implements HandlerInterceptor{
-    private static final String[] IGNORE_URI={"/dddemo/home/hi","/dddemo/home/hello"};
+    private static final Log logger = LogFactory.getLog(MainIntercepter.class);
+
+    private static final String[] IGNORE_URI={"/home/hi","/home/hello"};
 
     @Override
     public void afterCompletion(HttpServletRequest arg0,
                                 HttpServletResponse arg1, Object handler, Exception arg3)throws Exception{
-        System.out.println("MainInterceptor afterCompletion");
+        logger.info("MainInterceptor afterCompletion");
 
     }
 
     @Override
     public void postHandle(HttpServletRequest arg0, HttpServletResponse arg1,
                            Object handler, ModelAndView modelAndView)throws Exception{
-        System.out.println("MainInterceptor postHandle");
+        logger.info("MainInterceptor postHandle");
 
     }
 
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse reponse,
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
                              Object handler) throws Exception {
-        System.out.println("MainInterceptor preHandle");
+        logger.info("MainInterceptor preHandle");
         boolean flag =false;
         String servletPath=request.getServletPath();
         for(String s:IGNORE_URI){
@@ -37,12 +39,12 @@ public class MainIntercepter implements HandlerInterceptor{
         if(!flag){
             User user=(User)request.getSession().getAttribute("user");
             if(user==null){
-                System.out.println("MainInterceptor 拦截成功");
+                logger.info("MainInterceptor 拦截成功");
                 request.setAttribute("message","请先登陆");
-                request.getRequestDispatcher("login").forward(request,reponse);
+                request.getRequestDispatcher("login").forward(request,response);
             }
             else {
-                System.out.println("MainInterceptor 拦截通行");
+                logger.info("MainInterceptor 拦截通行");
                 flag=true;
             }
         }

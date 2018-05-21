@@ -10,6 +10,7 @@ public class Product {
     private static final Log logger = LogFactory.getLog(Product.class);
     @RequestMapping(value = "/product1")
     public String product(){
+        logger.info("Product调用");
         return "product";
     }
 }

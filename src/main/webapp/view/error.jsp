@@ -42,7 +42,7 @@
 
             <canvas id="code" style="float: left;width: 15%;height:50px;margin-top:22px;margin-left:5%;border: 1px white solid;background-color: white;" onclick="Redraw()"></canvas>
 
-            <input class="input_board" type="submit" name="submit" style="float: left;width: 20%;margin-left: 10%;">
+            <input class="input_board" type="submit" onclick="alert('您的反馈已收到！')" name="submit" style="float: left;width: 20%;margin-left: 10%;">
         </form>
     </div>
 </div>

@@ -106,8 +106,8 @@
                 </td>
                 <td>
                     <div id="main_down_joinus" class="aboutus">
-                        <a href="http://cs.whu.edu.cn"onclick=><img src="../static/image/34.png"></a>
-                        <span style="color: rgb(255, 255, 255);font-size: 20px;font-weight: 100 ;margin-top: 10px;align-content: center;">&nbsp;加入我们</span>
+                        <a href="/picture/download"onclick=><img src="../static/image/34.png"></a>
+                        <span style="color: rgb(255, 255, 255);font-size: 20px;font-weight: 100 ;margin-top: 10px;align-content: center;">&nbsp;资源下载</span>
                     </div>
                 </td>
                 <td>

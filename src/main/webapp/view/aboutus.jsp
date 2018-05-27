@@ -62,33 +62,21 @@
             <tr>
                 <td>
                     <div id="video1" class="video">
-                        <video width="100%" height="100%" style="border: black 1px solid;border-radius: 20px;" controls="controls">
-                            <source src="../static/image/1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img style="width:100%; height:100%" src="../static/image/1.png">
                     </div></td>
                 <td>
                     <div id="video2" class="video">
-                        <video width="100%" height="100%" style="border: black 1px solid;border-radius: 20px;" controls="controls">
-                            <source src="../static/image/2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img style="width:100%; height:100%"src="../static/image/2.png">
                     </div>
                 </td>
                 <td>
                     <div id="video3" class="video">
-                        <video width="100%" height="100%" style="border: black 1px solid;border-radius: 20px;" controls="controls">
-                            <source src="../static/image/3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img style="width:100%; height:100%" src="../static/image/3.png">
                     </div>
                 </td>
                 <td>
                     <div id="video4" class="video">
-                        <video width="100%" height="100%" style="border: black 1px solid;border-radius: 20px;" controls="controls">
-                            <source src="../static/image/4.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <img style="width:100%; height:100%" src="../static/image/3.png">
                     </div>
                 </td>
             </tr>

@@ -73,7 +73,7 @@
     </h1>
     <div id="main_mid_signup" class="signup">
 
-        <form id="sign_up_form" name="login_form" class="form" action="/dddemo/userlogin/login" method="post">
+        <form id="sign_up_form" name="login_form" class="form" action="/userlogin/login" method="post">
             <input class="input_board"  id="login_form_username" name="login_form_username" type="text" value="&nbsp;&nbsp;请输入用户名" onfocus="cf1()" onblur="checkCode1()">
 
 

@@ -38,14 +38,14 @@ public class UserLogin {
                 session1.close();
                 model.addAttribute("user",user);
                 session.setAttribute("user",user);
-                return "fir";
+                return "product";
             }
             else{
                 logger.info(user.getPassword());
                 logger.info(login_form_password);
                 session1.commit();
                 session1.close();
-                return "product";
+                return "login";
             }
 
         }

@@ -12,7 +12,7 @@
   </welcome-file-list>
 
   <session-config>
-    <session-timeout>30</session-timeout>
+    <session-timeout>15</session-timeout>
   </session-config>
 
   <!--配置springmvc DispatcherServlet-->

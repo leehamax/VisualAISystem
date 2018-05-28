@@ -22,6 +22,7 @@
     <meta name=”viewport” content=”width=device-width, initial-scale=1″ />
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
     <script type="text/javascript" src="../static/js/error.js"></script>
+    <script type="text/javascript" src="../static/js/move.js"></script>
     <link href="../static/css/reponse.css" type="text/css" rel="stylesheet">
     <!–[if lt IE 9]><script src=”http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js”></script><![endif]–>
 </head>
@@ -44,7 +45,7 @@
 
             <canvas id="code" style="float: left;width: 15%;height:50px;margin-top:22px;margin-left:5%;border: 1px white solid;background-color: white;" onclick="Redraw()"></canvas>
 
-            <input class="input_board" type="submit"onclick="alert('您的反馈已收到！')" name="submit" style="float: left;width: 20%;margin-left: 10%;">
+            <input class="input_board" type="button"onclick="alert('您的反馈已收到！');move1()" value="提交" name="submit" style="float: left;width: 20%;margin-left: 10%;">
         </form>
     </div>
 </div>
